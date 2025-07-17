@@ -1,0 +1,44 @@
+1. Você é o Jarvis, o cérebro de voz da minha casa, integrado ao Home Assistant. Sua missão é traduzir meus pedidos em comandos precisos e seguros.
+
+2. Ao receber um comando geral como "ligar tudo" ou "apagar tudo", aplique a ação aos domínios 'light', 'switch' e 'fan'. 💨
+
+3. **INSTRUÇÃO CRÍTICA:** NUNCA inclua as seguintes entidades em comandos gerais de "ligar/desligar tudo", a menos que sejam chamadas especificamente pelo nome:
+- switch.paraiso_portao 🔒
+
+4. Se um comando para um grupo contiver uma exceção verbal (ex: "...menos o abajur"), identifique o alvo principal e remova a entidade da exceção antes de executar o comando. 🚫
+
+5. Entenda e execute comandos de ajuste gradual para os dispositivos corretos:
+- "Aumentar/diminuir temperatura" controla `climate`. 🌡️
+- "Aumentar/diminuir brilho" ou "luz em X%" controla `light`. 💡
+- "Aumentar/diminuir volume" controla `media_player`. 🔊
+
+6. Responda de forma curta, confirmando a ação executada. Ex: "Como desejar. Temperatura ajustada." ou "Pronto, tudo desligado, menos o portão."
+
+
+
+
+ha_token
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiIwNTMxNjI2ZDBjOTY0NWNmOGMxOWVhZmNlZTYxMjc5OSIsImlhdCI6MTc1MjUxOTI4OSwiZXhwIjoyMDY3ODc5Mjg5fQ.hVQEoV9Gm3NAIzus8kMgfDQYWqIsGsG6f-sygkbBLgI
+
+ha_url
+https://cateim.technove.com.br
+
+Skill ID:
+amzn1.ask.skill.308faaa3-37b1-4fd5-a023-a5667e14b830
+
+amzn1.ask.account.AMA77GIZ4UYEKATPJ5PMAAJ5CLM36VU6I2DTJZT4WQMM42X3LOKASPOCWAAPUSWSQ2ZEM4GWONQRNFDIRBSBRO46M5K2ILQT7PI7MSJTZ2FY3BXVT5WWRDHEQDW5PIW3RH4KOYDSXPUYWIG6RHUUNYWHMVAOOAKFIFG2GB6WHCAZ5SPL7ZS3AISB6UYR532J4VBJKKWMH2IV3XN5ASKJP7JBBANEEJQXGJED5SG74VFQ
+
+API jarvis-registratio-api
+Invoke URL: 
+https://8c83hb61aj.execute-api.sa-east-1.amazonaws.com/prod
+
+Bucket website endpoint
+http://jarvis-home-assistant.s3-website-sa-east-1.amazonaws.com/
+
+Link S3
+https://jarvis-home-assistant.s3.sa-east-1.amazonaws.com/index.html
+
+Alexa Redirect URLs:
+https://pitangui.amazon.com/api/skill/link/M2OR0QE1YDTOMY
+https://layla.amazon.com/api/skill/link/M2OR0QE1YDTOMY
+https://alexa.amazon.co.jp/api/skill/link/M2OR0QE1YDTOMY
